@@ -1,21 +1,79 @@
+/* ฟอนต์และการตั้งค่าทั่วไป */
 body {
-  font-family: Arial, sans-serif;
-  background: #f0f2f5;
-  text-align: center;
-  padding: 20px;
+  font-family: "Prompt", Arial, sans-serif;
+  background: linear-gradient(135deg, #dbeafe, #fce7f3);
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
+/* กล่องหลัก */
 .container {
-  background: white;
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+/* ส่วนหัว */
+header {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .profile {
-  width: 150px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
-  margin: 15px 0;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid #3b82f6;
+}
+
+h1 {
+  margin: 10px 0 5px;
+  font-size: 28px;
+  color: #1e3a8a;
+}
+
+.student-id {
+  font-size: 16px;
+  color: #555;
+}
+
+/* หัวข้อ */
+h2 {
+  border-left: 6px solid #3b82f6;
+  padding-left: 10px;
+  color: #1e40af;
+  margin-top: 20px;
+}
+
+/* เนื้อหา */
+p {
+  line-height: 1.8;
+  margin: 10px 0;
+}
+
+/* สิ่งที่สนใจ */
+.interests ul {
+  list-style: none;
+  padding: 0;
+}
+
+.interests li {
+  background: #e0f2fe;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #0369a1;
+  transition: 0.3s;
+}
+
+.interests li:hover {
+  background: #bae6fd;
+  transform: translateX(5px);
 }
